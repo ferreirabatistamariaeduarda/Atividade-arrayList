@@ -11,17 +11,36 @@ public class Arrays {
             b[i] = (i + 1) * 2;
         }
 
-        
         for (int i = 0; i < 10; i++) {
             c[i] = a[i] * b[i];
         }
 
-        System.out.println("A: " + Arrays.toString(a));
-        System.out.println("B: " + Arrays.toString(b));
-        System.out.println("C: " + Arrays.toString(c));
-    }
+        System.out.print("A: [");
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i]);
+            if (i < a.length - 1) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println("]");
 
-    private static String toString(int[] a) {
-        return null;
+         System.out.print("B: [");
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(b[i]);
+            if (i < b.length - 1) {
+                System.out.print(", ");
+            }
+        }
+
+        System.out.println("]");
+
+         System.out.print("C: [");
+        for (int i = 0; i < c.length; i++) {
+            System.out.print(c[i]);
+            if (i < c.length - 1) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println("]");
     }
 }
